@@ -428,7 +428,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 59547a2799547f9478caae3b48910bcc, type: 3}
       propertyPath: m_Name
-      value: Ch45_nonPBR@Walking
+      value: Enemyy
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 59547a2799547f9478caae3b48910bcc, type: 3}
       propertyPath: m_TagString
@@ -482,7 +482,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 100
   damage: 50
-  healthBar: {fileID: 6535485864927056126, guid: d058f0fab31fd9f41b15f7116e0126c5, type: 3}
+  healthBar: {fileID: 4606817339720377715}
 --- !u!114 &-6403135574156437674
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -496,7 +496,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 0}
-  agent: {fileID: -1231649677023701863, guid: d058f0fab31fd9f41b15f7116e0126c5, type: 3}
+  agent: {fileID: -1458037972740490081}
   delay: 1
   interval: 0.1
 --- !u!195 &-1458037972740490081

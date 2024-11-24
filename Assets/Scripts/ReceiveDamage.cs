@@ -2,15 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-using UnityEditor.SearchService;
 using UnityEngine.SceneManagement;
 
 public class HealthSystem : MonoBehaviour
 {
     public int maxHealth = 100;
-    public int damage = 10;
+    public int damage = 50;
     public Scrollbar healthBar;
-    
 
     private int currentHealth;
     private EnemyCounter enemyCounter;
