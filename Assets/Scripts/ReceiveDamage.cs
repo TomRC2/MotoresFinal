@@ -9,7 +9,7 @@ public class HealthSystem : MonoBehaviour
     public int maxHealth = 100;
     public int damage = 50;
     public Scrollbar healthBar;
-
+    public GameObject impactParticles;
     private int currentHealth;
     private EnemyCounter enemyCounter;
 
@@ -25,6 +25,11 @@ public class HealthSystem : MonoBehaviour
         if (collision.gameObject.CompareTag("Bullet"))
         {
             TakeDamage(damage);
+            if (impactParticles != null)
+            {
+                Instantiate(impactParticles, collision.contacts[0].point, Quaternion.identity);
+            }
+
         }
         if (collision.gameObject.CompareTag("Player"))
         {

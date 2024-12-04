@@ -483,6 +483,7 @@ MonoBehaviour:
   maxHealth: 100
   damage: 50
   healthBar: {fileID: 4606817339720377715}
+  impactParticles: {fileID: 2207946630703188870, guid: bb48048fa52bb724aac5ddd3d99541d8, type: 3}
 --- !u!114 &-6403135574156437674
 MonoBehaviour:
   m_ObjectHideFlags: 0
