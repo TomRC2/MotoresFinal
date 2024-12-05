@@ -11,13 +11,13 @@ public class HealthSystem : MonoBehaviour
     public Scrollbar healthBar;
     public GameObject impactParticles;
     private int currentHealth;
-    private EnemyCounter enemyCounter;
+    public EnemyManager enemyManager;
 
     void Start()
     {
         currentHealth = maxHealth;
         UpdateHealthBar();
-        enemyCounter = FindObjectOfType<EnemyCounter>();
+        enemyManager = FindObjectOfType<EnemyManager>();
     }
 
     private void OnCollisionEnter(Collision collision)
@@ -47,10 +47,6 @@ public class HealthSystem : MonoBehaviour
         if (currentHealth < 0)
         {
             currentHealth = 0;
-            if (enemyCounter != null)
-            {
-                enemyCounter.EnemyDefeated(gameObject);
-            }
             Destroy(gameObject);
         }
         UpdateHealthBar();
@@ -70,6 +66,10 @@ public class HealthSystem : MonoBehaviour
         if (scoreManager != null)
         {
             scoreManager.AddPoint();
+        }
+        if (enemyManager != null)
+        {
+            enemyManager.OnEnemyDefeated();
         }
     }
 }

@@ -500,6 +500,15 @@ MonoBehaviour:
   agent: {fileID: -1458037972740490081}
   delay: 1
   interval: 0.1
+  initialEnemies:
+  - {fileID: 0}
+  - {fileID: 0}
+  newEnemies:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!195 &-1458037972740490081
 NavMeshAgent:
   m_ObjectHideFlags: 0
